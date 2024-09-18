@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+        <record id="sale_type_recorded" model="sale.type">
+            <field name="name">Recorded</field>
+            <field name="handle_call_no" eval="True"/>
+        </record>
+
+        <record id="sale_type_signed" model="sale.type">
+            <field name="name">Signed</field>
+            <field name="handle_call_no" eval="False"/>
+        </record>
+    </data>
+</odoo>
