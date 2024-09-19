@@ -11,8 +11,8 @@
         'contacts',
     ],
     'data': [
-        'security/ir.model.access.csv',
         'security/groups.xml',
+        'security/ir.model.access.csv',
         'views/res_partner_views.xml',
     ],
     'installable': True,
