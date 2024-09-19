@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="group_company_phones_management" model="res.groups">
+            <field name="name">Phone Management</field>
+            <field name="comment">Make the user able to add and modify additional Phone Numbers on company contacts</field>
+        </record>
+    </data>
+</odoo>

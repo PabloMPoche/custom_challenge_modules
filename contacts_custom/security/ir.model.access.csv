@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_user_res_partner_phones,account.user.res.partner.phones,model_res_partner_phones,base.group_user,1,0,0,0
+access_manager_partner_phones,account.manager.res.partner.phones,model_res_partner_phones,contacts_custom.group_company_phones_management,1,1,1,0
+access_admin_partner_phones,account.admin.res.partner.phones,model_res_partner_phones,base.group_system,1,1,1,1
