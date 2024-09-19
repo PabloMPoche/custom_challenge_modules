@@ -36,7 +36,7 @@ class ResPartnerPhones(models.Model):
         ), (
             'phone_len',
             'CHECK(char_length(phone_number) > 4)',
-            """There isn't a number that short. The minimum size is 5  digits"""
+            """There isn't a number that short. The minimum size is 5  digits."""
         ),
     ]
 
@@ -56,13 +56,9 @@ class ResPartnerPhones(models.Model):
     # Probably there is a better way to handle it.
     def create(self, vals_list):
         vals_list[0]['phone_number'] = formatted_number(vals_list[0]['phone_number'])
-
-        res = super(ResPartnerPhones, self).create(vals_list)
-        return res
+        return super(ResPartnerPhones, self).create(vals_list)
 
     def write(self, vals):
         if 'phone_number' in vals:
             vals['phone_number'] = formatted_number(vals['phone_number'])
-
-        res = super(ResPartnerPhones, self).write(vals)
-        return res
+        return super(ResPartnerPhones, self).write(vals)

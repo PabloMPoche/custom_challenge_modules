@@ -27,6 +27,4 @@ class ResPartnerCategory(models.Model):
             if tag.id == self.env.ref('general_actions.res_partner_category_prospects').id:
                 raise exceptions.UserError(f"Can't delete this record, archive {tag.name} tag instead.")
 
-        res = super(ResPartnerCategory, self).unlink()
-
-        return res
+        return super(ResPartnerCategory, self).unlink()
