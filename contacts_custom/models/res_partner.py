@@ -32,11 +32,11 @@ class ResPartnerPhones(models.Model):
         (
             'phone_uniq',
             'unique (phone_number)',
-            """A number can't be repeated!"""
+            """Phone numbers can't be repeated!"""
         ), (
             'phone_len',
             'CHECK(char_length(phone_number) > 4)',
-            """There isn't a number that short. The minimum size is 5  digits."""
+            """There isn't a number that short. The minimum size is 5 digits."""
         ),
     ]
 

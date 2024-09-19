@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from odoo import fields, models, api, _
+from odoo import fields, models, api
 
 
 class SaleOrder(models.Model):
@@ -7,7 +7,7 @@ class SaleOrder(models.Model):
 
     sale_type_id = fields.Many2one(comodel_name='sale.type', string='Sale Type')
     call_no = fields.Char(string='Call ID')
-    handle_call = fields.Boolean('Handle Call')
+    handle_call = fields.Boolean(string='Handle Call')
 
     @api.onchange('sale_type_id')
     def _do_handle_call(self):
